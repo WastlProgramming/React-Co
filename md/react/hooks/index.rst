@@ -6,3 +6,5 @@ Hooks 🪝
    :caption: Contents:
 
    useContext.rst
+   useEffect.rst
+   useState.rst
