@@ -1,5 +1,5 @@
 =========================================
-`useState` Hook Dokumentation
+`useState` 
 =========================================
 
 .. note:: Diese Dokumentation bietet eine umfassende Übersicht zum `useState` Hook in React und erklärt seine Funktionsweise, insbesondere im Hinblick auf die Handhabung und Aktualisierung von Zuständen (State) in funktionalen Komponenten.

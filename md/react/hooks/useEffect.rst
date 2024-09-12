@@ -1,5 +1,5 @@
 =========================================
-`useEffect` Hook Dokumentation
+`useEffect` 
 =========================================
 
 .. note:: Diese Dokumentation bietet eine umfassende Übersicht zum `useEffect` Hook in React und erklärt seine Funktionsweise, insbesondere im Hinblick auf Rendering und Updates.
