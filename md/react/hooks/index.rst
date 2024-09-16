@@ -7,4 +7,5 @@ Hooks 🪝
 
    useContext.rst
    useEffect.rst
+   useParams.rst
    useState.rst

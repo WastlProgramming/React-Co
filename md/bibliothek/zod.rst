@@ -58,6 +58,58 @@ Die Verwendung von `z.infer<typeof formSchema>` erlaubt es TypeScript, den Typ d
 
 Das sorgt für eine saubere, sichere und wartbare Codebasis.
 
+Redifinieren des gesamnten Objekts 🛸
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Im folgenden Beispiel wird ein Zod-Schema für ein `legalProtectionSchema` definiert. Das Schema überprüft die Eingaben für eine Mitgliedsnummer sowie für ein Versicherungsfeld, das nur dann erforderlich ist, wenn die Vorversicherung angegeben ist.
+
+.. code-block:: react
+  
+  import { z } from 'zod';
+
+  export const legalProtectionSchema = z.object({
+    // Mitgliedsnummer muss ein nicht-leerer String mit maximal 100 Zeichen sein
+    membershipNumber: z
+      .string()
+      .min(1, mandatoryField)  // Pflichtfeld
+      .max(100, 'Max. 100 Zeichen'),  // Zeichenlimit
+  })
+  // Refinement: Versicherungsfeld nur erforderlich, wenn Vorversicherung 'ja' ist
+  .refine(
+    (data) => {
+      if (data.isPreInsurance === 'yes') {
+        return data.insurance !== '';  // Versicherung muss angegeben sein
+      }
+      return true;  // ansonsten ist das Feld optional
+    },
+    {
+      message: mandatoryField,  // Fehlermeldung, falls Bedingung nicht erfüllt ist
+      path: ['insurance'],  // bezieht sich auf das Versicherungsfeld
+    }
+  );
+
+
+Wann `refine` auf das gesamte Objekt anwenden?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Du verwendest `refine`, wenn du eine Validierung durchführen möchtest, die auf **mehreren Feldern** des Objekts basiert. In diesem Fall reicht es nicht aus, nur ein einzelnes Feld zu validieren, sondern es ist wichtig, wie die Felder zueinander stehen.
+
+In diesem Beispiel wird überprüft, ob das Feld `insurance` nur dann erforderlich ist, wenn `isPreInsurance` den Wert `'yes'` hat. Das bedeutet, die Validierung hängt von beiden Feldern ab und kann nicht einzeln für eines der Felder durchgeführt werden.
+
+Was ist in `data` enthalten?
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Das `data`-Objekt, das in der `refine`-Funktion übergeben wird, repräsentiert das **gesamte Schema**, nachdem alle einzelnen Feldvalidierungen (wie `min`, `max` usw.) durchgeführt wurden. Es enthält alle Eingabewerte für die definierten Felder. In diesem Fall hat `data` folgende Struktur:
+
+.. code-block: react
+  {
+    "membershipNumber": "12345",
+    "isPreInsurance": "yes",
+    "insurance": "XYZ Versicherung"
+  }
+
+
+Falls `isPreInsurance` den Wert `'yes'` hat, wird zusätzlich überprüft, ob `insurance` auch ausgefüllt ist. Wenn diese Bedingung nicht erfüllt wird, tritt die spezifizierte Fehlermeldung auf.
+
+
 
 Zod Validierung mit `Controller` 🎲
 -----------------------------------------

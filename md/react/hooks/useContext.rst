@@ -88,3 +88,7 @@ Zusammenfassung
 
 .. tip::
     Für kleinere globale Zustände ist die Kontext-API eine hervorragende Wahl. Sobald dein Zustand jedoch komplexer wird und viele Komponenten betrifft, solltest du darüber nachdenken, ein spezialisierteres State-Management-Tool wie **Redux** zu verwenden.
+
+
+Weiteres Beispiel
+-----------------------------------------------

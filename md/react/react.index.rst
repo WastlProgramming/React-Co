@@ -6,6 +6,7 @@ React
    :maxdepth: 3
    :caption: Contents:
 
-   index.tsx.rst
    components.rst
+   index.tsx.rst
    hooks/index.rst
+   routes.rst
