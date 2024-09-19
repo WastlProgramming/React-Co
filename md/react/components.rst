@@ -5,8 +5,8 @@ React Komponenten Guide
 In diesem Guide erfährst du, wie du in **React** eine Komponente erstellst, wie du `props` übergibst und wie du Methoden bindest, um interaktive Komponenten zu erstellen. 🚀
 
 
-Erstellen einer Komponente
-===========================
+Erstellen einer Komponente 🖊️
+-----------------------------------
 
 In **React** kannst du auf zwei Arten Komponenten erstellen: **Funktionale Komponenten** und **Klassen-Komponenten**. Die moderne und am meisten verwendete Methode sind **Funktionale Komponenten**.
 
@@ -27,8 +27,8 @@ Beispiel einer einfachen funktionalen Komponente:
 - `Greeting` ist eine funktionale Komponente, die einen einfachen `h1`-Tag rendert.
 - Verwende `export default`, um die Komponente für andere Dateien zugänglich zu machen.
 
-Props an Komponenten übergeben
-===============================
+Props an Komponenten übergeben 🫱
+-----------------------------------
 
 **Props** (kurz für *Properties*) sind ein Mechanismus, um Daten von einer übergeordneten Komponente an eine untergeordnete Komponente zu übergeben. Dies ist einer der wichtigsten Mechanismen für die Kommunikation zwischen Komponenten.
 
@@ -61,8 +61,31 @@ Um diese Komponente mit einem Namen aufzurufen:
    - `props.name` enthält den Wert, der von der übergeordneten Komponente übergeben wurde.
    - Im obigen Beispiel wird `"Alice"` an die `Greeting`-Komponente übergeben und in der UI angezeigt.
 
-Methoden als Props übergeben
-=============================
+Promps optional setzen 🔘
+--------------------------------
+
+Promps können mit einen **?** Optional gesetzt werden. 
+
+.. code-block:: react
+
+  export default function Opt({ name }) {
+    return (
+      <h1>{name ? "was drin" : "nix drin"}</h1>
+    );
+  }
+
+  // Verwendung
+  <Opt name="ja" />  // zeigt "was drin"
+  <Opt />            // zeigt "nix drin"
+
+
+
+  <Opt name=ja/> // was drin 
+  <Opt> // nix drin 
+
+
+Methoden als Props übergeben 🧪
+----------------------------------------------
 
 Manchmal möchtest du eine Methode von einer übergeordneten Komponente an eine untergeordnete Komponente übergeben, um sie zu triggern. Dies kann durch das Übergeben von **Methoden als Props** erfolgen.
 
@@ -99,8 +122,8 @@ Die Methode in der übergeordneten Komponente:
    - Die `handleClick`-Methode wird als Prop an die `ActionButton`-Komponente übergeben.
    - Wenn der Button geklickt wird, wird die Methode `handleClick` in der übergeordneten Komponente ausgeführt.
 
-Props und Methoden kombinieren
-===============================
+Props und Methoden kombinieren ♾️
+-------------------------------------------
 
 Du kannst auch Daten und Methoden gleichzeitig übergeben, um komplexere Interaktionen zu ermöglichen.
 
@@ -158,8 +181,8 @@ In diesem Guide haben wir gelernt:
 - Wie man **Methoden als Props** übergibt, um Interaktionen zu ermöglichen. 🔗
 - Wie man **Props und Methoden kombiniert**, um komplexere Komponenten zu bauen. 🧩
 
-Weiterführende Ressourcen
-=========================
+Weiterführende Ressourcen 🌍
+----------------------------------
 
 - Offizielle React Dokumentation: https://reactjs.org/docs/getting-started.html 📚
 - React Cheatsheet: https://devhints.io/react 🔖

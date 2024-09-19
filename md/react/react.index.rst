@@ -10,3 +10,5 @@ React
    index.tsx.rst
    hooks/index.rst
    routes.rst
+   typen_with_typescript.rst
+   typescript.rst
