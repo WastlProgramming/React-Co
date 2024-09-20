@@ -1,5 +1,5 @@
 fireEvent vs userEvent 🎆
-------------------------------------------------------------
+=======================================
 
 Beim Testen von Benutzerinteraktionen in React-Komponenten stehen zwei Methoden zur Verfügung: **fireEvent** und **userEvent**. Beide dienen dazu, Benutzerinteraktionen wie Klicks, Eingaben oder Tastaturaktionen zu simulieren, jedoch gibt es wesentliche Unterschiede in der Funktionsweise und dem Einsatzgebiet.
 

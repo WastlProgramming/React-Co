@@ -21,7 +21,7 @@ Beispiel einer Komponente
 
 Hier ist eine einfache TypeScript-Komponente:
 
-.. code-block:: ts
+.. code-block:: react
 
     import React from 'react';
 
@@ -35,7 +35,7 @@ Hier ist eine einfache TypeScript-Komponente:
 
     export default Begrüßung;
 
-:note:`Hinweis`: Die Props der Komponente werden mit dem Typ `Props` definiert, um sicherzustellen, dass die Komponente nur einen String für den Namen akzeptiert.
+.. :note:`Hinweis`: Die Props der Komponente werden mit dem Typ `Props` definiert, um sicherzustellen, dass die Komponente nur einen String für den Namen akzeptiert.
 
 Zusammenfassung
 ---------------

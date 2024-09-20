@@ -1,9 +1,7 @@
-Vitest ⚡
+
+Einführung in Vitest ⚙️  
 ===========================================================
 
-
-Einführung
--------------
 
 Diese Dokumentation beschreibt, wie man **Vitest** zusammen mit **React Hook Form** einsetzt, um Unit-Tests für eine Formular-Komponente in einer React-Anwendung zu schreiben. Wir gehen detailliert auf die verschiedenen Tests ein, erklären, wann und warum bestimmte Methoden verwendet werden und wie man auf verschiedene Elemente der Komponente zugreifen kann.
 

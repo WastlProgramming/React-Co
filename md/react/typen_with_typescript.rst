@@ -53,7 +53,7 @@ Typisierung von State
 
 Neben der Typisierung von Props kann auch der State einer Komponente typisiert werden:
 
-.. code-block:: ts
+.. code-block:: react
 
     import React, { useState } from 'react';
 

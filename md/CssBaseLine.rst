@@ -1,19 +1,23 @@
-.. emoji:: :arrow_forward: Zod in React
+Zod in React
+============
 
 Zod ist eine TypeScript-first Validierungsbibliothek, die häufig in React-Projekten verwendet wird, um die Struktur und Validität von Daten zu überprüfen. Sie bietet eine flexible, expressive API, mit der du Datenstrukturen definieren und deren Validität überprüfen kannst.
 
-.. emoji:: :dart: **Was ist Zod?**
+Was ist Zod?
+------------
 
 Zod ist eine deklarative Validierungsbibliothek, die mit einem Fokus auf TypeScript erstellt wurde. Die Hauptaufgabe von Zod besteht darin, sicherzustellen, dass die Daten, die du in deiner Anwendung verwendest, der erwarteten Form und Struktur entsprechen. Anders als andere Validierungsbibliotheken integriert sich Zod nahtlos mit TypeScript, wodurch sowohl Validierung als auch Typüberprüfung in einer einzigen Quelle konsistent bleiben.
 
-.. emoji:: :bulb: **Verwendung von Zod**
+Verwendung von Zod
+------------------
 
 Zod wird hauptsächlich zur Validierung von Nutzereingaben, API-Antworten und zur Sicherstellung von korrekten Datentypen verwendet. In einem React-Projekt wird Zod oft zusammen mit Formularbibliotheken wie `react-hook-form` verwendet, um benutzerfreundliche Formvalidierungen zu implementieren.
 
 .. note::
    Zod arbeitet eng mit TypeScript zusammen. Es generiert automatisch Typen basierend auf den definierten Validierungsregeln, was den Code sicherer und einfacher zu pflegen macht.
 
-.. emoji:: :gear: **Installation**
+Installation
+------------
 
 Um Zod in deinem React-Projekt zu verwenden, kannst du es einfach über npm oder yarn installieren:
 
@@ -24,7 +28,8 @@ Um Zod in deinem React-Projekt zu verwenden, kannst du es einfach über npm oder
    # oder mit yarn
    yarn add zod
 
-.. emoji:: :rocket: **Beispielcode**
+Beispielcode
+------------
 
 Hier ein einfaches Beispiel für die Validierung eines Objekts mit Zod in einem React-Projekt:
 
@@ -50,19 +55,21 @@ Hier ein einfaches Beispiel für die Validierung eines Objekts mit Zod in einem 
 
 In diesem Beispiel definieren wir ein Schema, das sicherstellt, dass der Name ein String ist und mindestens 2 Zeichen enthält und das Alter eine Zahl ist, die mindestens 18 Jahre beträgt.
 
-.. emoji:: :chart_with_upwards_trend: **Vorteile von Zod**
+Vorteile von Zod
+----------------
 
 - **TypeScript-Integration**: Zod bietet starke Typensicherheit und automatische Typeninferenzen, was es zu einer idealen Wahl für TypeScript-Entwickler macht.
 - **Leicht zu benutzen**: Mit einer deklarativen API ist Zod einfach und schnell zu implementieren.
 - **Flexible Validierungen**: Zod bietet eine Vielzahl von Methoden zur Definition und Validierung komplexer Datenstrukturen.
 - **Konsistenz**: Die Validierungsregeln und die Typdefinitionen stammen aus einer einzigen Quelle, was den Code konsistenter macht.
 
-.. emoji:: :warning: **Nachteile von Zod**
+Nachteile von Zod
+-----------------
 
 - **Größere Pakete**: Im Vergleich zu reinen Validierungsbibliotheken ohne Typensystemintegration kann Zod ein wenig größer sein, was in Anwendungen mit extremen Performance-Anforderungen eine Rolle spielen kann.
 - **Abhängigkeit von TypeScript**: Da Zod stark auf TypeScript ausgerichtet ist, bietet es möglicherweise nicht denselben Nutzen in rein JavaScript-basierten Projekten.
-  
-.. emoji:: :construction_worker: **Fazit**
+
+Fazit
+-----
 
 Zod ist eine leistungsstarke, gut in TypeScript integrierte Bibliothek zur Validierung von Datenstrukturen in React-Projekten. Mit der klaren und deklarativen API kannst du sicherstellen, dass Nutzereingaben und andere Datenquellen immer den richtigen Typen und Strukturen entsprechen. Obwohl es im Vergleich zu kleineren Bibliotheken einen etwas größeren Footprint hat, überwiegen die Vorteile der Typensicherheit und Flexibilität in vielen Fällen.
-
