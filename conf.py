@@ -8,7 +8,7 @@
 
 from datetime import datetime
 
-project = 'reactjs'
+project = 'react_and_vite'
 copyright = f'{datetime.now().year}, Bichler Bastian'
 author = 'Bichler Bastian'
 release = '0.0.1'
