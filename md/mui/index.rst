@@ -39,4 +39,5 @@ MUI ist eine leistungsstarke Bibliothek für die Erstellung moderner Benutzerobe
    :maxdepth: 2
    :caption: Contents:
 
-   themes
+   themes.rst
+   customComponentenBauen.rst
