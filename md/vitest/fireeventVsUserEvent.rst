@@ -84,6 +84,7 @@ Die Wahl zwischen `fireEvent` und `userEvent` hängt von der Art des Tests ab:
   
 - **userEvent** ist die bessere Wahl für realistische Benutzerszenarien, besonders wenn es um Texteingaben, Drag-and-Drop oder andere mehrstufige Interaktionen geht. Es sollte bevorzugt werden, wenn es wichtig ist, dass alle zugehörigen DOM-Ereignisse simuliert werden.
 
+
 Fazit
 ~~~~~~~~~~~~~~~ 
 
