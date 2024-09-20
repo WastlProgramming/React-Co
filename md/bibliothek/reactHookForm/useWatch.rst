@@ -201,3 +201,21 @@ Fazit
 
 .. tip::
    Verwende `watch` für schnelle Prototypen oder wenn Neurenderings kein Problem darstellen. Verwende hingegen `useWatch`, wenn du die Performance optimieren und unnötige Renderings vermeiden möchtest.
+
+
+
+Kurzes Beispiel als Unterschied 
+---------------------------------------------------
+
+
+- watch will render the root level
+- useWatch will render at the hook/component level
+
+<A>
+  <B>
+    <C>
+       <D /> // Input change here
+    </C>
+  </B>
+  <E /> // i only want to re-render the update here.
+</A>
