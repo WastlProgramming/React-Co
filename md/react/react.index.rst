@@ -1,7 +1,6 @@
 React
 ==============
 
-
 .. toctree::
    :maxdepth: 3
    :caption: Contents:
@@ -12,5 +11,4 @@ React
    liftup.rst
    produktivServer.rst
    routes.rst
-   typen_with_typescript.rst
-   typescript.rst
+   typescript/index.rst

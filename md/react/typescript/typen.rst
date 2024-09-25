@@ -1,4 +1,4 @@
-Typen in React mit TypeScript (TSX)
+Typen 
 ===================================
 
 Einführung

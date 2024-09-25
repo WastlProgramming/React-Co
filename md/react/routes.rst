@@ -1,5 +1,5 @@
 
-Router (BrowserRouter) 🧭
+Routing 🧭
 ==============================================
 
 .. note:: Diese Dokumentation bietet eine detaillierte Übersicht zum `react-router-dom` Package, insbesondere zu `BrowserRouter`. Sie erklärt, wie man Routing in einer React-Applikation installiert und verwendet, um Seiten dynamisch basierend auf der URL zu wechseln.

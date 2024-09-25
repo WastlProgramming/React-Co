@@ -1,5 +1,4 @@
-========================
-React Komponenten Guide
+Komponenten Guide
 ========================
 
 In diesem Guide erfährst du, wie du in **React** eine Komponente erstellst, wie du `props` übergibst und wie du Methoden bindest, um interaktive Komponenten zu erstellen. 🚀
@@ -172,8 +171,8 @@ Die übergeordnete Komponente, die eine Nachricht und eine Methode bereitstellt:
 - `MessageDisplay` zeigt eine Nachricht an und bietet eine Schaltfläche zum Löschen der Nachricht.
 - Die Nachricht wird über `props.message` übergeben und die Methode `clearMessage` wird verwendet, um die Nachricht zu löschen, wenn der Button gedrückt wird.
 
-Zusammenfassung
-===============
+Zusammenfassung 🤓
+---------------------------------
 
 In diesem Guide haben wir gelernt:
 - Wie man **funktionale Komponenten** in React erstellt. 🛠️
