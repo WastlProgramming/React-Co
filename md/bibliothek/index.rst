@@ -9,3 +9,4 @@ Hier werden alle Bibliothek Gelistett
 
    zod
    reactHookForm/index.rst
+   reactQuery/index.rst
