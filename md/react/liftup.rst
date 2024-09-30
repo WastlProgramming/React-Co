@@ -1,5 +1,7 @@
-Lift Up 🛗 - Teilen von State zwischen Komponenten in React
+Lift Up 🛗 
 ======================================================================
+
+Lift up bedeutet: Teilen von State zwischen Komponenten
 
 .. important::
     **Thema**: "Lifting State Up" ist eine zentrale Technik in React, um State zwischen mehreren Komponenten zu teilen. Dabei wird der State aus den Komponenten, die ihn nutzen, in eine gemeinsame Elternkomponente verschoben, um eine einheitliche Datenquelle zu schaffen.

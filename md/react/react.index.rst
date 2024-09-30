@@ -5,6 +5,7 @@ React
    :maxdepth: 3
    :caption: Contents:
 
+   classVsFunctComponents.rst 
    components.rst
    index.tsx.rst
    hooks/index.rst
