@@ -9,5 +9,6 @@ Hooks 🪝
    useContext.rst
    useEffect.rst
    useParams.rst
+   useReducer.rst
    useRef.rst
    useState.rst
