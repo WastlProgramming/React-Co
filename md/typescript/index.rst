@@ -47,3 +47,4 @@ Mit React und TypeScript kannst du typsichere und wartbare Anwendungen erstellen
 
    void_vs_async.rst
    typen.rst
+   typen_vs_interface.rst
