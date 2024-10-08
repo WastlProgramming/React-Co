@@ -12,4 +12,3 @@ React
    liftup.rst
    produktivServer.rst
    routes.rst
-   typescript/index.rst

@@ -1,5 +1,5 @@
-React mit TypeScript - Kurz und Knapp
-=====================================
+Typescript 🦖
+==================================
 
 React und TypeScript kombinieren
 --------------------------------
@@ -40,3 +40,10 @@ Hier ist eine einfache TypeScript-Komponente:
 Zusammenfassung
 ---------------
 Mit React und TypeScript kannst du typsichere und wartbare Anwendungen erstellen. Der Einstieg ist einfach und schnell, indem du `Create React App` mit der TypeScript-Vorlage verwendest.
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Kapitel:
+
+   void_vs_async.rst
+   typen.rst

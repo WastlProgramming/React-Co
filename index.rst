@@ -11,5 +11,6 @@ Doku für React Js und vieles Mehr
    md/react/react.index
    md/mui/index
    md/bibliothek/index
+   md/typescript/index
    md/vitest/index
 
