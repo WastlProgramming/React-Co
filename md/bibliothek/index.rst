@@ -10,3 +10,4 @@ Hier werden alle Bibliothek Gelistett
    zod
    reactHookForm/index.rst
    reactQuery/index.rst
+   sentry/index.rst
